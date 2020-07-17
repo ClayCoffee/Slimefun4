@@ -101,7 +101,11 @@ public final class SlimefunPlugin extends JavaPlugin implements SlimefunAddon {
     private final GrapplingHookListener grapplingHookListener = new GrapplingHookListener();
     private final BackpackListener backpackListener = new BackpackListener();
     private final SlimefunBowListener bowListener = new SlimefunBowListener();
-
+    
+    public static SlimefunPlugin instance() {
+        return instance;
+    }
+    
     public SlimefunPlugin() {
         super();
     }
